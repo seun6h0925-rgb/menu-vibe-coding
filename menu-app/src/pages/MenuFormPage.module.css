@@ -1,0 +1,112 @@
+.page {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+}
+
+.back {
+    color: var(--label-alternative);
+}
+
+.back:hover {
+    color: var(--label-normal);
+}
+
+.title {
+    margin: 0;
+    color: var(--label-strong);
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.kicker {
+    margin: 0;
+    color: var(--label-assistive);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20);
+    padding: var(--space-32);
+    background: var(--background-elevated-normal);
+    border: 1px solid var(--line-normal-alternative);
+    border-radius: var(--radius-lg);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.label {
+    color: var(--label-neutral);
+}
+
+.control {
+    height: 44px;
+    padding: 0 var(--space-12);
+    background: var(--background-normal-normal);
+    border: 1px solid var(--line-normal-normal);
+    border-radius: var(--radius-md);
+    color: var(--label-normal);
+    outline: none;
+}
+
+.control:focus {
+    border-color: var(--line-primary-normal);
+}
+
+.invalid {
+    border-color: var(--line-status-negative-normal);
+}
+
+.hint {
+    color: var(--label-assistive);
+}
+
+.errorText {
+    color: var(--status-negative);
+}
+
+.radios {
+    display: flex;
+    gap: var(--space-8);
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-6);
+    padding: var(--space-10) var(--space-16);
+    border: 1px solid var(--line-normal-normal);
+    border-radius: var(--radius-md);
+    color: var(--label-neutral);
+    cursor: pointer;
+}
+
+.radioOn {
+    border-color: var(--primary-normal);
+    background: var(--background-status-positive);
+    color: var(--label-normal);
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-8);
+    justify-content: flex-end;
+}
+
+.banner {
+    padding: var(--space-12) var(--space-16);
+    background: var(--background-status-negative);
+    border: 1px solid var(--line-status-negative-normal);
+    border-radius: var(--radius-md);
+    color: var(--status-negative);
+}

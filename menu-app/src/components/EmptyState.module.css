@@ -1,0 +1,25 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+    padding: var(--space-64) var(--space-24);
+    background: var(--background-elevated-normal);
+    border: 1px solid var(--line-normal-alternative);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.error {
+    border-color: var(--line-status-negative-normal);
+    background: var(--background-status-negative);
+}
+
+.title {
+    color: var(--label-normal);
+}
+
+.desc {
+    max-width: 44ch;
+    color: var(--label-alternative);
+}

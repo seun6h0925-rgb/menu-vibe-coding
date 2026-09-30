@@ -1,0 +1,70 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+}
+
+.back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-4);
+    color: var(--label-alternative);
+}
+
+.back:hover {
+    color: var(--label-normal);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    padding: var(--space-32);
+    background: var(--background-elevated-normal);
+    border: 1px solid var(--line-normal-alternative);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-normal-small);
+}
+
+.code {
+    color: var(--label-assistive);
+}
+
+.name {
+    margin: 0;
+    color: var(--label-strong);
+}
+
+.price {
+    margin: 0;
+    color: var(--primary-normal);
+}
+
+.facts {
+    margin: 0;
+    display: grid;
+    gap: var(--space-16);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    padding-top: var(--space-16);
+    border-top: 1px solid var(--line-normal-alternative);
+}
+
+.fact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.factLabel {
+    color: var(--label-alternative);
+}
+
+.factValue {
+    color: var(--label-normal);
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+}

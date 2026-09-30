@@ -1,0 +1,41 @@
+/* 앱 전역 스타일. 토큰이 아닌 값은 여기 모아 둔다. */
+
+/* 모서리 값은 Montage 의 wds-theme 에 토큰으로 정의돼 있지 않다.
+ * (각 컴포넌트의 style.ts 안에 흩어져 있다)
+ * 그래서 화면마다 제각각 적지 않도록 이 자리에서 한 번만 정한다. */
+:root {
+    --radius-sm: var(--radius-small, 6px);
+    --radius-md: var(--radius-medium, 8px);
+    --radius-lg: var(--radius-xlarge, 16px);
+    --radius-full: var(--radius-full, 9999px);
+
+    --layout-max: 1120px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFFBEB;
+    color: var(--label-normal);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}

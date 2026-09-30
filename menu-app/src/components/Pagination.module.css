@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-top: var(--space-32);
+}
+
+.page,
+.arrow {
+    min-width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--space-8);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--label-neutral);
+    cursor: pointer;
+}
+
+.page:hover:not(:disabled),
+.arrow:hover:not(:disabled) {
+    background: var(--fill-alternative);
+}
+
+.current {
+    background: var(--primary-normal);
+    color: var(--static-white);
+}
+
+.current:hover {
+    background: var(--primary-strong);
+}
+
+.arrow:disabled {
+    color: var(--label-disable);
+    cursor: not-allowed;
+}
+
+.gap {
+    min-width: 24px;
+    text-align: center;
+    color: var(--label-assistive);
+}
